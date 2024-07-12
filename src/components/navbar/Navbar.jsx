@@ -1,5 +1,6 @@
 import "./navbar.scss"
 import Logo from '../../assets/img/Logo.png'
+import menuIcon from '../../assets/img/menu.png'
 import React, { useState } from "react";
 
 function Navbar() {
@@ -10,19 +11,19 @@ function Navbar() {
             <div className='left'>
                 <a href="/" className="logo">
                     <img src={Logo}  alt="" />
-                    <span> Estate </span>
+                    <span> Online Store </span>
                 </a>
                 <a href="/"> Home </a>
                 <a href="/"> About </a>
                 <a href="/"> Others </a>
-                <a href="/"> Agents </a>
+                <a href="/"> Stores </a>
             </div>
             <div className='right'>
                 <a href="/"> Sign In </a>
                 <a href="/" className="register"> Sign Up </a>
                 <div className="menuIcon">
                     <img 
-                        src="/menu.png" 
+                        src={menuIcon} 
                         alt='' 
                         onClick={() => setOpen((prev) => !prev)}
                     />
@@ -32,7 +33,7 @@ function Navbar() {
                     <a href="/"> Home </a>
                     <a href="/"> About </a>
                     <a href="/"> Others </a>
-                    <a href="/"> Agents </a>
+                    <a href="/"> Stores </a>
                     <a href="/"> Sign In </a>
                     <a href="/"> Sign Up </a>
           
