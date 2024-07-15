@@ -18,7 +18,7 @@ function SearchBar() {
         <div className='searchBar'>
             <div className="type"> 
                 <h3> 
-                    Buy Something! 
+                    Let's Buy Something! 
                 </h3>
             </div>
             <form>

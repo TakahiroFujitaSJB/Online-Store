@@ -24,7 +24,7 @@ function Card ({item}) {
                 <p className="price">${item.price} </p>
                 <div className="bottom">
                     <div className='features'>
-                        <div className='"feature'>
+                        <div className='feature'>
                             <span>type: {item.type}</span>
                         </div>
                         <div className='feature'>

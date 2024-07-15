@@ -10,12 +10,16 @@ function HomePage() {
                 <div className='wrapper'>
                     <h1>Find and buy what you want from this Online Store</h1>
                     <p> 
-                    FILLER CONTENT FILLER CONTENT FILLER CONTENT FILLER CONTENT FILLER CONTENT 
-                    FILLER CONTENT FILLER CONTENT FILLER CONTENT FILLER CONTENT FILLER CONTENT FILLER CONTENT 
-                    FILLER CONTENT FILLER CONTENT FILLER CONTENT FILLER CONTENT FILLER CONTENT FILLER CONTENT 
-                    FILLER CONTENT FILLER CONTENT FILLER CONTENT FILLER CONTENT FILLER CONTENT FILLER CONTENT 
-                    FILLER CONTENT FILLER CONTENT FILLER CONTENT FILLER CONTENT FILLER CONTENT 
+                    Step into a world of endless possibilities at <strong>TF Online.</strong> From trend-setting fashion to cutting-edge tech and everything in between, we're here to make your shopping experience extraordinary. 
+                    Why choose us? It's simple:
                     </p>
+                    <p>
+                        <br />&emsp; <strong>Curated Selection:</strong> Discover handpicked items that stand out from the crowd.
+                        <br />&emsp;<strong> Effortless Shopping</strong>: Navigate our sleek interface for a seamless checkout.
+                        <br />&emsp;<strong>Speedy Delivery</strong>: Enjoy swift shipping straight to your door.
+                        <br />&emsp;<strong>Top-notch Service:</strong> Our team is always here to help, ensuring your satisfaction.
+                    </p>
+                    <p> Ready to elevate your shopping game? Dive in and discover what makes us your go-to online shopping destination. </p>
                     <SearchBar />
                     <div className='metrics'>
                         <div className='metricsBox'>
