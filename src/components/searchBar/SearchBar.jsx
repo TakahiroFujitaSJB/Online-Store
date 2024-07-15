@@ -1,7 +1,6 @@
 import './searchBar.scss';
 import React, { useState } from 'react'
 import Search from '../../assets/img/search.png';
-import OnlineStore2 from '../../assets/img/onlineStore2.png';
 
 function SearchBar() {
     const [query,setQuery] = useState({

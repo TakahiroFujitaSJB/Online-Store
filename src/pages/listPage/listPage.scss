@@ -1,0 +1,35 @@
+.listPage {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 100vh;
+    overflow-y: scroll;
+
+    .listContainer{
+         display: flex;
+         flex-direction: column;
+         padding-left: 50px;
+         padding-right: 50px;
+         gap: 20px;
+
+        .wrapper{
+            padding-right: 50px;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .display{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(3, auto);
+                grid-auto-flow: row;
+                gap: 40px;
+                min-height: 300px;
+               
+                
+        }
+    }
+
+
+    
+}

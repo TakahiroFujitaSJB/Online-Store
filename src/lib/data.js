@@ -1,0 +1,55 @@
+export const listData = [
+    {
+      id: 1,
+      title: "Going On",
+      img: "https://i.postimg.cc/FHMRxWv7/GoingOn.jpg",
+      type: "music",
+      rating: 4.5,
+      reviews: 5000,
+      stock: 1000,
+      price: 12.99,
+    },
+    {
+      id: 2,
+      title: "Ao no Sumika",
+      img: "https://i.postimg.cc/cLgCwqVp/Ao-No-Sumika.jpg",
+      type: "music",
+      rating: 3.5,
+      reviews: 3000,
+      stock: 7,
+      price: 12.99,
+    },
+    {
+      id: 3,
+      title: "How to Eat Life",
+      img: "https://i.postimg.cc/ZnR5VXMz/290009114-570207314706797-8964377742502211485-n.jpg",
+      type: "music",
+      rating: 2.5,
+      reviews: 344,
+      stock: 34,
+      price: 12.99,
+    },
+    {
+      id: 4,
+      title: "Demon Dance Tokyo",
+      img: "https://i.postimg.cc/VL2kWG92/291498510-398676722232454-3361050522912371738-n.png",
+      type: "music",
+      rating: 4.0,
+      reviews: 210,
+      stock: 11,
+      price: 12.99,
+    },
+    {
+      id: 5,
+      title: "Place Holder 1",
+      img: "https://i.postimg.cc/G3Y7p97Y/placeholder.jpg",
+      type: "music",
+      rating: 4.5,
+      reviews: 5000,
+      stock: 2,
+      price: 12.99,
+    },
+    
+  ];
+  
+ 
