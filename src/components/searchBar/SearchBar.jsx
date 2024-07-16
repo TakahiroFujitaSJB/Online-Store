@@ -25,10 +25,12 @@ function SearchBar() {
 
     return (
         <div className='searchBar'>
-            <div className="type"> 
-                <h3> 
-                    Let's Buy Something! 
-                </h3>
+            <div className="type" > 
+                <a href="/list">
+                    <h3> 
+                        Let's Buy Something! 
+                    </h3>
+                </a>
             </div>
             <form onSubmit={handleSearch}>
                 <input 

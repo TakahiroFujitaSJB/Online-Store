@@ -10,6 +10,7 @@ function ListPage () {
         <div className='listPage'>
             <div className='listContainer'>
                 <div className='wrapper'>
+                    <h1> Explore and find what you want! </h1>
                     <Filter />
                 </div>
 
