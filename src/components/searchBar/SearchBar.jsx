@@ -5,7 +5,7 @@ import Search from '../../assets/img/search.png';
 
 function SearchBar() {
     const [inputs, setInputs] = useState({
-        location: '',
+        itemName: '',
         minPrice: '',
         maxPrice: ''
       });
@@ -35,9 +35,9 @@ function SearchBar() {
             <form onSubmit={handleSearch}>
                 <input 
                     type="text" 
-                    name="location" 
+                    name="itemName" 
                     placeholder='Item to search' 
-                    value={inputs.location}
+                    value={inputs.itemName}
                     onChange={handleChange}
                 />
                 <input 

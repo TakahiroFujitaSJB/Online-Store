@@ -14,10 +14,19 @@ function ResultPage () {
     const maxPrice = parseFloat(params.get('maxPrice')) || Infinity;
 
     const filteredResults = listData.filter((item) => {
-        const matchesQuery = item.title.toLowerCase().includes(query.toLowerCase());
-        const matchesType = type === '' || item.type === type;
-        const matchesPrice = item.price >= minPrice && item.price <= maxPrice;
-    return matchesQuery && matchesType && matchesPrice;
+        if (query != '' && type == '')
+            {
+                const matchesType = item.type.toLowerCase().includes(query.toLowerCase()) 
+                const matchesPrice = item.price >= minPrice && item.price <= maxPrice;
+                return matchesType && matchesPrice;
+            }
+        else{
+            const matchesQuery = item.title.toLowerCase().includes(query.toLowerCase());
+            const matchesType = type === '' || item.type === type;
+            const matchesPrice = item.price >= minPrice && item.price <= maxPrice;
+            return matchesQuery && matchesType && matchesPrice;
+        }
+        
     });
 
     return (
@@ -33,8 +42,8 @@ function ResultPage () {
                         <Card key={item.id} item={item} />
                         ))
                     ) : (
-                        <h1>No matching results found!</h1>
-                    )}
+                        <h1>No matching results found</h1>
+                  )}
                 </div>
             </div>
         </div>
