@@ -163,7 +163,8 @@ export const listData = [
     
   ];
   
-  export const singlePostData = {
+  export const singlePostData = [
+    {
     id: 1,
     title: `'Ao no Sumika' Kamiyama Yoh physical Full Album`,
     images: [
@@ -182,10 +183,42 @@ export const listData = [
     subDescription: `Dive into the profound emotional landscape of Yoh Kamiyama's celebrated album, "Ao no Sumika," where each track unfolds a narrative of grief and the eventual path to acceptance. Featuring poignant hits like "Endroll" and the titular track "Ao no Sumika," this collection encapsulates the artist's exploration of human emotions in a raw and heartfelt manner.
     The album is crafted with meticulous attention to detail, ensuring every note resonates deeply with the listener's journey. Whether you're seeking solace or simply appreciating the artistry, Yoh Kamiyama's music offers a cathartic experience that transcends mere listening.
     Embrace the themes of resilience and growth woven into each song. Own a piece of musical storytelling that speaks directly to the heart and soul.`,
-  };
+  },
+  {
+    id: 2,
+    title: `'Going On' Victorians physical Full Album`,
+    images: [
+      "https://i.postimg.cc/FHMRxWv7/GoingOn.jpg",
+      "https://i.postimg.cc/5yCw28d0/ad.png",
+      "https://i.postimg.cc/26JQY2tM/290930584-1021907678495367-5533369136074405746-n.jpg",
+      "https://i.postimg.cc/Bvm5YqBq/287025069-3291027284474839-5629358983001132573-n.jpg",
+    ],
+    artist: 'Victorians',
+    type: "music",
+    rating: 4.5,
+    reviews: 5000,
+    stock: 1000,
+    price: 20.99,
+    mainDescription: `Physical Album collection of Victorians's hit album 'Going On' including hit songs: 'Going On' and 'Last Dance'.`,
+    subDescription: `Dive into the profound emotional landscape of Victorians's celebrated album, "Ao no Sumika," where each track unfolds a narrative of grief and the eventual path to acceptance. Featuring poignant hits like "Endroll" and the titular track "Ao no Sumika," this collection encapsulates the artist's exploration of human emotions in a raw and heartfelt manner.
+    The album is crafted with meticulous attention to detail, ensuring every note resonates deeply with the listener's journey. Whether you're seeking solace or simply appreciating the artistry, Victorians's music offers a cathartic experience that transcends mere listening.
+    Embrace the themes of resilience and growth woven into each song. Own a piece of musical storytelling that speaks directly to the heart and soul.`,
+  }
+
+
+];
   
-  export const userData = {
+  export const userData = [
+    {
     id: 1,
     name: "Kamiyama Yoh",
     img: "https://i.postimg.cc/tT6GFG7D/yoh-removebg-preview.png",
-  };
+    link:`https://www.yohkamiyama.com/`,
+   },
+   {
+    id: 2,
+    name: "Victorians",
+    img: "https://i.postimg.cc/V677CqVW/165115289-499163391448448-7290380364673764155-n-1.png",
+    link: "https://portfolio-b9eb3.web.app/",
+   }
+];

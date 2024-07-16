@@ -31,11 +31,13 @@ function Card ({item}) {
                             <span>{item.stock} in stock</span>
                         </div>
                     </div>
+                    {/* 
                     <div className='icons'>
                         <div className='icon'>
                             <img src={Save}></img>
                         </div>
                     </div>
+                    */}
                 </div>
             </div>
 
