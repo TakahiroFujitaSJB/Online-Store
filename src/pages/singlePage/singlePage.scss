@@ -1,3 +1,4 @@
+@import "../../responsive.scss"; 
 
 .singlePage {
     padding-bottom: 50px;
@@ -52,7 +53,11 @@
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
-                    padding-right: 100px;
+                    padding-right: 200px;
+                    @include sm{
+                        padding-right: 1px;
+                    }
+
                     p{
                         padding-bottom: 5px;
                         
