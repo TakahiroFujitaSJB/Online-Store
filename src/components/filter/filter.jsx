@@ -1,7 +1,8 @@
 import './filter.scss'
 import Search from '../../assets/img/search.png';
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
+
 
 
 const Filter = () => {
@@ -11,6 +12,15 @@ const Filter = () => {
       minPrice: '',
       maxPrice: ''
     });
+
+    const location = useLocation();
+    const params = new URLSearchParams(location.search);
+    const type = params.get('type') || '';
+    const min = parseFloat(params.get('minPrice')) || 0;
+    const max = parseFloat(params.get('maxPrice')) || Infinity;
+
+
+
     const navigate = useNavigate();
   
     const handleChange = (e) => {
@@ -46,6 +56,7 @@ const Filter = () => {
               id="type"
               value={inputs.type}
               onChange={handleChange}
+              placeholder={type}
             >
               <option value="">any</option>
               <option value="music">music</option>
@@ -61,7 +72,7 @@ const Filter = () => {
               type="number"
               id="minPrice"
               name="minPrice"
-              placeholder="any"
+              placeholder={min}
               value={inputs.minPrice}
               onChange={handleChange}
             />
@@ -72,7 +83,7 @@ const Filter = () => {
               type="number"
               id="maxPrice"
               name="maxPrice"
-              placeholder="any"
+              placeholder={max}
               value={inputs.maxPrice}
               onChange={handleChange}
             />
