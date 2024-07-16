@@ -1,18 +1,27 @@
 import './searchBar.scss';
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Search from '../../assets/img/search.png';
 
 function SearchBar() {
-    const [query,setQuery] = useState({
-        type: "buy",
-        minPrice:0,
-        maxPrice:0,
-    })
+    const [inputs, setInputs] = useState({
+        location: '',
+        minPrice: '',
+        maxPrice: ''
+      });
 
-    const switchType = (val) => {
-        setQuery((prev) => ({...prev, type: val}));
-    }
+    const navigate = useNavigate();
 
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setInputs((prev) => ({ ...prev, [name]: value }));
+    };
+
+    const handleSearch = (e) => {
+        e.preventDefault();
+        const query = new URLSearchParams(inputs).toString();
+        navigate(`/search?${query}`);
+      };
 
     return (
         <div className='searchBar'>
@@ -21,12 +30,33 @@ function SearchBar() {
                     Let's Buy Something! 
                 </h3>
             </div>
-            <form>
-                <input type="text" name="location" placeholder='Item to search' />
-                <input type="number" name="minPrice" min={0} max={10000} placeholder='Minimum Price' />
-                <input type="number" name="maxPrice" min={0} max={10000} placeholder='Maximum Price' />
-                <button>
-                    <img src={Search} alt="" />
+            <form onSubmit={handleSearch}>
+                <input 
+                    type="text" 
+                    name="location" 
+                    placeholder='Item to search' 
+                    value={inputs.location}
+                    onChange={handleChange}
+                />
+                <input 
+                    type="number" 
+                    name="minPrice" 
+                    min={0} max={10000} 
+                    placeholder='Minimum Price' 
+                    value={inputs.minPrice}
+                    onChange={handleChange}
+                />
+                <input 
+                    type="number" 
+                    name="maxPrice" 
+                    min={0} 
+                    max={10000} 
+                    placeholder='Maximum Price'
+                    value={inputs.maxPrice}
+                    onChange={handleChange} 
+                />
+                <button type='submit'>
+                    <img src={Search} alt="Search" />
                 </button>
             </form>
         </div>
@@ -34,3 +64,4 @@ function SearchBar() {
 }
 
 export default SearchBar
+

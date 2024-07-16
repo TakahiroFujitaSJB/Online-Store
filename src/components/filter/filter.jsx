@@ -1,12 +1,13 @@
 import './filter.scss'
 import Search from '../../assets/img/search.png';
 
+
 function Filter () {
 
 
     return (
         <div className='filter'>
-            <h1> Search results for <b> Kenshi Yonezu </b> </h1>
+            <h1> Explore </h1>
             <div className='top'>
                 <div className='item'>
                     <input type='text' id='itemName' name='itemName' placeholder='Item Name' />

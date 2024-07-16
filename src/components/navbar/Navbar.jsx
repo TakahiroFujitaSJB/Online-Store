@@ -14,7 +14,7 @@ function Navbar() {
                     <span> Online Store </span>
                 </a>
                 <a href="/"> Home </a>
-                <a href="/"> Explore </a>
+                <a href="/list"> Explore </a>
             </div>
             <div className='right'>
                 <a href="/"> Sign In </a>
@@ -29,6 +29,7 @@ function Navbar() {
 
                 <div className={open ? "menu active" : "menu"}>
                     <a href="/"> Home </a>
+                    <a href="/list"> Explore </a>
                     <a href="/"> Sign In </a>
                     <a href="/"> Sign Up </a>
           

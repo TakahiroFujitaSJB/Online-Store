@@ -4,7 +4,6 @@ import Filter from "../../components/filter/filter"
 import Card from "../../components/card/card"
 
 function ListPage () {
-
     const data = listData;
 
     return (

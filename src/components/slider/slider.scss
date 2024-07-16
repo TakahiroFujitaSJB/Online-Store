@@ -28,11 +28,11 @@
             justify-content: center;
             img{
                 width: 50px;
+                cursor: pointer;
 
                 &.right{
-                transform: rotate(180deg);
+                    transform: rotate(180deg);
                 }
-                cursor: pointer;
             }
         }
 
