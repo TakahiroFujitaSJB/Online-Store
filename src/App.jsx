@@ -2,8 +2,10 @@ import HomePage from "./pages/homePage/homePage";
 import ListPage from "./pages/listPage/listPage";
 import Layout from "./pages/layout/layout";
 import ResultPage from "./pages/resultPage/resultPage";
-import { createBrowserRouter, RouterProvider,} from "react-router-dom";
 import SinglePage from "./pages/singlePage/singlePage";
+import LoginPage from "./pages/loginPage/loginPage";
+import SignUpPage from "./pages/signUnPage/signUpPage";
+import { createBrowserRouter, RouterProvider,} from "react-router-dom";
 
 
 function App() {
@@ -27,8 +29,15 @@ function App() {
         {
           path:"/:id",
           element: <SinglePage/>
-        }
-
+        },
+        {
+          path:"/login",
+          element: <LoginPage/>
+        },
+        {
+          path:"/signup",
+          element: <SignUpPage/>
+        },
       ]
     }
     

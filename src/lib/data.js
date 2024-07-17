@@ -222,3 +222,11 @@ export const listData = [
     link: "https://portfolio-b9eb3.web.app/",
    }
 ];
+
+export const loginData = [
+  {
+    userName:"John Adam",
+    email: "JAdams@gmail.com",
+    password:`123456789`,
+ },
+];
