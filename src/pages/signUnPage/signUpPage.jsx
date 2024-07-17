@@ -1,19 +1,32 @@
 import './signUpPage.scss';
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { loginData } from '../../lib/data';
 import Lottie from "lottie-react";
 import SignAni from '../../assets/lottie/signup.json';
 
-const SignUpPage = () => {
+const SignUpPage = ({ addUser }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle signup logic here
-    console.log('Signing up with', email, password, confirmPassword);
+    if (password !== confirmPassword) {
+      alert('Passwords do not match');
+      return;
+    }
+    const newUser = 
+    { email: email, 
+      password: password
+    };
+    console.log(newUser);
+    addUser(newUser);
+    setEmail('');
+    setPassword('');
+    setConfirmPassword('');
+    alert('Verification mail has been sent! Please verify before attempting login (not mail was sent actually)');
+    navigate('/');
   };
 
 

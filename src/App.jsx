@@ -5,10 +5,22 @@ import ResultPage from "./pages/resultPage/resultPage";
 import SinglePage from "./pages/singlePage/singlePage";
 import LoginPage from "./pages/loginPage/loginPage";
 import SignUpPage from "./pages/signUnPage/signUpPage";
+import { loginData } from './lib/data';
+
+import React, { useState } from 'react';
 import { createBrowserRouter, RouterProvider,} from "react-router-dom";
 
 
 function App() {
+  const [users, setUsers] = useState(loginData)
+
+  const addUser = (newUser) => {
+    setUsers([...users, newUser]);
+    console.log(users);
+  };
+
+
+
   const router = createBrowserRouter([
     {
       path: "/",
@@ -32,17 +44,16 @@ function App() {
         },
         {
           path:"/login",
-          element: <LoginPage/>
+          element: <LoginPage users={users} />
         },
         {
           path:"/signup",
-          element: <SignUpPage/>
+          element: <SignUpPage addUser={addUser}/>
         },
       ]
     }
     
   ]);
-
 
 
   return (

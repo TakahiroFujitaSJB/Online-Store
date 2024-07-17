@@ -225,7 +225,6 @@ export const listData = [
 
 export const loginData = [
   {
-    userName:"John Adam",
     email: "JAdams@gmail.com",
     password:`123456789`,
  },
