@@ -16,9 +16,10 @@ function ResultPage () {
     const filteredResults = listData.filter((item) => {
         if (query != '' && type == '')
             {
+                const matchesQuery = item.title.toLowerCase().includes(query.toLowerCase());
                 const matchesType = item.type.toLowerCase().includes(query.toLowerCase()) 
                 const matchesPrice = item.price >= minPrice && item.price <= maxPrice;
-                return matchesType && matchesPrice;
+                return (matchesQuery || matchesType) && matchesPrice;
             }
         else{
             const matchesQuery = item.title.toLowerCase().includes(query.toLowerCase());
