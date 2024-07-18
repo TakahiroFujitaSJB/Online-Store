@@ -74,6 +74,9 @@
             
             height: 700px;
             width: 700px;
+            @include sm{
+                display: none;
+            }
         }
 
     }

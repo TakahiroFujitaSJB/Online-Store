@@ -200,7 +200,7 @@ export const listData = [
     stock: 1000,
     price: 20.99,
     mainDescription: `Physical Album collection of Victorians's hit album 'Going On' including hit songs: 'Going On' and 'Last Dance'.`,
-    subDescription: `Dive into the profound emotional landscape of Victorians's celebrated album, "Ao no Sumika," where each track unfolds a narrative of grief and the eventual path to acceptance. Featuring poignant hits like "Endroll" and the titular track "Ao no Sumika," this collection encapsulates the artist's exploration of human emotions in a raw and heartfelt manner.
+    subDescription: `Dive into the profound emotional landscape of Victorians's celebrated album, "Going On," where each track unfolds a narrative of grief and the eventual path to acceptance. Featuring poignant hits like "Last Dance" and the titular track "Going On" this collection encapsulates the artist's exploration of human emotions in a raw and heartfelt manner.
     The album is crafted with meticulous attention to detail, ensuring every note resonates deeply with the listener's journey. Whether you're seeking solace or simply appreciating the artistry, Victorians's music offers a cathartic experience that transcends mere listening.
     Embrace the themes of resilience and growth woven into each song. Own a piece of musical storytelling that speaks directly to the heart and soul.`,
   }

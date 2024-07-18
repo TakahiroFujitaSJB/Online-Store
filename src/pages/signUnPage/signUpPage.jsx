@@ -25,7 +25,7 @@ const SignUpPage = ({ addUser }) => {
     setEmail('');
     setPassword('');
     setConfirmPassword('');
-    alert('Verification mail has been sent! Please verify before attempting login (not mail was sent actually)');
+    alert('Verification mail has been sent! Please verify before attempting login (no mail was sent actually)');
     navigate('/');
   };
 
