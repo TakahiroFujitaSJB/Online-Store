@@ -3,9 +3,18 @@
 This is a sample frontend project using React.js as well as Sass css. 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## It's online using Firebase! Access it now!
 
-This website is deployed online using Firebase: ----
+
+
+https://github.com/user-attachments/assets/8ecfa4a6-5972-47ba-916b-40ec57a37e78
+
+
+
+
+# Currently there are list of things to keep in mind with this app:
+ * data.js in src/lib is a sample json simulation.
+ * Currently only the first two items has their own page for the sake of time.
+ * The buy option is missing temporary while I test out shopping cart feature using Redux
 
 ## How launch locally
 
@@ -53,9 +62,5 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 
 
-# Currently there are list of things to keep in mind with this app:
- * data.js in src/lib is a sample json simulation.
- * Currently only the first two items has their own page for the sake of time.
- * The buy option is missing temporary while I test out shopping cart feature using Redux
   
 
