@@ -1,7 +1,8 @@
 # Hello! and welcome to my Sample Online Store created from React.js and Sass!
 
 This is a sample frontend project using React.js as well as Sass css. 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+#### in-process of hosting to a firebase server
 
 
 
