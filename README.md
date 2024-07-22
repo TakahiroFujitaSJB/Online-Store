@@ -2,7 +2,7 @@
 
 This is a sample frontend project using React.js as well as Sass css. 
 
-#### in-process of hosting to a firebase server
+##### *in-process of hosting to a firebase server*
 
 
 
